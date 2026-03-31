@@ -3,7 +3,7 @@
 import { MessageCircle } from 'lucide-react';
 
 export function WhatsAppButton() {
-  const whatsappNumber = '221770000000';
+  const whatsappNumber = '221781683139';
   const message = encodeURIComponent(
     "Bonjour 👋🏾 Je souhaite réserver un shooting photo/vidéo. Pouvez-vous m'en dire plus ?"
   );
