@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
-import { unlink } from 'fs/promises';
-import { join } from 'path';
+import { del } from '@vercel/blob';
 
 const ADMIN_KEY = 'pacobakh-admin-2024';
 
@@ -63,19 +62,19 @@ export async function DELETE(
 
     const { id } = await params;
 
-    // Get photo to find file path
+    // Get photo to find blob URL
     const photo = await db.portfolioPhoto.findUnique({ where: { id } });
     if (!photo) {
       return NextResponse.json({ error: 'Photo non trouvée' }, { status: 404 });
     }
 
-    // Delete file from disk
-    try {
-      const filePath = join(process.cwd(), 'public', photo.imageUrl);
-      await unlink(filePath);
-    } catch {
-      // File might not exist, continue with DB deletion
-      console.warn('Fichier non trouvé sur le disque:', photo.imageUrl);
+    // Delete blob from Vercel Blob storage
+    if (photo.imageUrl.includes('blob.vercel-storage.com')) {
+      try {
+        await del(photo.imageUrl);
+      } catch {
+        console.warn('Blob non trouvé:', photo.imageUrl);
+      }
     }
 
     // Delete from database
