@@ -13,26 +13,26 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'WhatsApp',
-    value: '+221 77 000 00 00',
-    href: 'https://wa.me/221770000000',
+    value: '+221 78 168 31 39',
+    href: 'https://wa.me/221781683139',
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'contact@pacoyabakh.com',
-    href: 'mailto:contact@pacoyabakh.com',
+    value: 'bosspaco3@gmail.com',
+    href: 'mailto:bosspaco3@gmail.com',
   },
   {
     icon: Instagram,
     label: 'Instagram',
     value: '@pacoyabakh',
-    href: 'https://instagram.com/pacoyabakh',
+    href: 'https://www.instagram.com/paco_ya_bakh/',
   },
   {
     icon: MessageCircle,
     label: 'TikTok',
     value: '@pacoyabakh',
-    href: 'https://tiktok.com/@pacoyabakh',
+    href: 'https://www.tiktok.com/@pacoyabakh?_r=1&_t=ZS-959LimvRy7d',
   },
 ];
 
@@ -124,7 +124,7 @@ export function FooterSection({
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://instagram.com/pacoyabakh"
+                href="https://www.instagram.com/paco_ya_bakh/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-500 hover:text-amber-400 transition-colors"
@@ -132,7 +132,7 @@ export function FooterSection({
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://tiktok.com/@pacoyabakh"
+                href="https://www.tiktok.com/@pacoyabakh?_r=1&_t=ZS-959LimvRy7d"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-500 hover:text-amber-400 transition-colors"
