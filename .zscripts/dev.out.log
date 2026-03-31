@@ -1,0 +1,1125 @@
+==========================================
+[2026-03-31 11:08:22] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.29ms] ".env"
+bun install v1.3.10 (30e609e0)
+
++ @tailwindcss/postcss@4.1.18
++ @types/react@19.2.8
++ @types/react-dom@19.2.3
++ bun-types@1.3.6
++ eslint@9.39.2
++ eslint-config-next@16.1.3
++ tailwindcss@4.1.18
++ tw-animate-css@1.4.0
++ typescript@5.9.3
++ @dnd-kit/core@6.3.1
++ @dnd-kit/sortable@10.0.0
++ @dnd-kit/utilities@3.2.2
++ @hookform/resolvers@5.2.2
++ @mdxeditor/editor@3.52.3
++ @prisma/client@6.19.2
++ @radix-ui/react-accordion@1.2.12
++ @radix-ui/react-alert-dialog@1.1.15
++ @radix-ui/react-aspect-ratio@1.1.8
++ @radix-ui/react-avatar@1.1.11
++ @radix-ui/react-checkbox@1.3.3
++ @radix-ui/react-collapsible@1.1.12
++ @radix-ui/react-context-menu@2.2.16
++ @radix-ui/react-dialog@1.1.15
++ @radix-ui/react-dropdown-menu@2.1.16
++ @radix-ui/react-hover-card@1.1.15
++ @radix-ui/react-label@2.1.8
++ @radix-ui/react-menubar@1.1.16
++ @radix-ui/react-navigation-menu@1.2.14
++ @radix-ui/react-popover@1.1.15
++ @radix-ui/react-progress@1.1.8
++ @radix-ui/react-radio-group@1.3.8
++ @radix-ui/react-scroll-area@1.2.10
++ @radix-ui/react-select@2.2.6
++ @radix-ui/react-separator@1.1.8
++ @radix-ui/react-slider@1.3.6
++ @radix-ui/react-slot@1.2.4
++ @radix-ui/react-switch@1.2.6
++ @radix-ui/react-tabs@1.1.13
++ @radix-ui/react-toast@1.2.15
++ @radix-ui/react-toggle@1.1.10
++ @radix-ui/react-toggle-group@1.1.11
++ @radix-ui/react-tooltip@1.2.8
++ @reactuses/core@6.1.9
++ @tanstack/react-query@5.90.19
++ @tanstack/react-table@8.21.3
++ class-variance-authority@0.7.1
++ clsx@2.1.1
++ cmdk@1.1.1
++ date-fns@4.1.0
++ embla-carousel-react@8.6.0
++ framer-motion@12.26.2
++ input-otp@1.4.2
++ lucide-react@0.525.0
++ next@16.1.3
++ next-auth@4.24.13
++ next-intl@4.7.0
++ next-themes@0.4.6
++ prisma@6.19.2
++ react@19.2.3
++ react-day-picker@9.13.0
++ react-dom@19.2.3
++ react-hook-form@7.71.1
++ react-markdown@10.1.0
++ react-resizable-panels@3.0.6
++ react-syntax-highlighter@15.6.6
++ recharts@2.15.4
++ sharp@0.34.5
++ sonner@2.0.7
++ tailwind-merge@3.4.0
++ tailwindcss-animate@1.0.7
++ uuid@11.1.0
++ vaul@1.1.2
++ z-ai-web-dev-sdk@0.0.17
++ zod@4.3.5
++ zustand@5.0.10
+
+827 packages installed [7.51s]
+==========================================
+[2026-03-31 11:08:30] Completed: bun install
+[LOG] Step: bun install | Duration: 8s
+==========================================
+
+==========================================
+[2026-03-31 11:08:30] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+SQLite database custom.db created at file:/home/z/my-project/db/custom.db
+
+🚀  Your database is now in sync with your Prisma schema. Done in 20ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 82ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.6.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-31 11:08:31] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-31 11:08:31] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-31 11:08:31] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-31 11:08:31] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.3.24:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+✓ Ready in 917ms
+ GET / 200 in 2.5s (compile: 2.4s, render: 133ms)
+Next.js dev server is ready!
+ GET / 200 in 2.2s (compile: 2.1s, render: 183ms)
+==========================================
+[2026-03-31 11:08:35] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-31 11:08:35] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 57ms (compile: 2ms, render: 55ms)
+[BUN] Health check passed
+==========================================
+[2026-03-31 11:08:35] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-31 11:08:35] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-31 11:08:35] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 725).
+Use 'kill 725' to stop it.
+ GET / 200 in 42ms (compile: 4ms, render: 38ms)
+ GET / 200 in 37ms (compile: 4ms, render: 33ms)
+✓ Compiled in 292ms
+✓ Compiled in 145ms
+ GET / 200 in 60ms (compile: 39ms, render: 21ms)
+⚠ Cross origin request detected from preview-chat-e6e3db24-a6c7-4cae-a0f4-089e939dcd7a.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+✓ Compiled in 154ms
+✓ Compiled in 150ms
+✓ Compiled in 150ms
+✓ Compiled in 144ms
+✓ Compiled in 191ms
+✓ Compiled in 172ms
+✓ Compiled in 173ms
+✓ Compiled in 161ms
+ GET / 200 in 58ms (compile: 38ms, render: 20ms)
+ GET / 200 in 23ms (compile: 2ms, render: 21ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 13ms (compile: 3ms, render: 11ms)
+ GET / 200 in 15ms (compile: 1807µs, render: 13ms)
+ GET / 200 in 13ms (compile: 1731µs, render: 11ms)
+ GET / 200 in 22ms (compile: 1862µs, render: 20ms)
+ GET / 200 in 13ms (compile: 1871µs, render: 11ms)
+✓ Compiled in 1152ms
+ GET / 200 in 75ms (compile: 53ms, render: 22ms)
+ GET /portfolio-studio-1.jpg 404 in 496ms (compile: 361ms, render: 135ms)
+ GET /hero-bg.png 404 in 500ms (compile: 393ms, render: 107ms)
+ GET /portfolio-outdoor-1.jpg 404 in 507ms (compile: 410ms, render: 98ms)
+ GET /portfolio-event-1.jpg 404 in 88ms (compile: 5ms, render: 83ms)
+ GET /portfolio-product-1.jpg 404 in 69ms (compile: 6ms, render: 63ms)
+ GET /portfolio-studio-2.jpg 404 in 44ms (compile: 9ms, render: 35ms)
+ GET /portfolio-outdoor-2.jpg 404 in 34ms (compile: 7ms, render: 27ms)
+✓ Compiled in 101ms
+✓ Compiled in 114ms
+ GET / 200 in 208ms (compile: 42ms, render: 166ms)
+ GET / 200 in 59ms (compile: 3ms, render: 56ms)
+📋 Nouvelle demande de réservation: {
+  "name": "Alpha Mouhamadou",
+  "whatsapp": "+221 776211339",
+  "service": "Photographie",
+  "shootingType": "Studio",
+  "purposes": "Réseaux sociaux",
+  "idea": "Non spécifié",
+  "referenceLinks": "Aucun",
+  "date": "2026-04-01T22:00:00.000Z",
+  "budget": "Non spécifié",
+  "needsHelp": "Non",
+  "createdAt": "2026-03-31T11:25:14.917Z"
+}
+ POST /api/booking 200 in 289ms (compile: 269ms, render: 20ms)
+ GET / 200 in 48ms (compile: 31ms, render: 16ms)
+ GET / 200 in 40ms (compile: 3ms, render: 37ms)
+ GET / 200 in 13ms (compile: 1970µs, render: 11ms)
+ GET / 200 in 15ms (compile: 1878µs, render: 13ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 21ms (compile: 2ms, render: 19ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 17ms (compile: 1975µs, render: 15ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 13ms (compile: 1971µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1806µs, render: 11ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 14ms (compile: 1797µs, render: 13ms)
+ GET / 200 in 36ms (compile: 1857µs, render: 35ms)
+ GET / 200 in 13ms (compile: 1700µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1917µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1741µs, render: 10ms)
+ GET / 200 in 13ms (compile: 1576µs, render: 12ms)
+ GET / 200 in 21ms (compile: 2ms, render: 19ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 21ms (compile: 2ms, render: 19ms)
+ GET / 200 in 13ms (compile: 1958µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1889µs, render: 10ms)
+ GET / 200 in 14ms (compile: 1986µs, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 2ms, render: 16ms)
+ GET / 200 in 27ms (compile: 2ms, render: 24ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 14ms (compile: 1985µs, render: 12ms)
+ GET / 200 in 12ms (compile: 1918µs, render: 10ms)
+ GET / 200 in 14ms (compile: 3ms, render: 12ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 23ms (compile: 2ms, render: 21ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 12ms (compile: 2ms, render: 9ms)
+ GET / 200 in 10ms (compile: 1572µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1772µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1663µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1684µs, render: 9ms)
+ GET / 200 in 14ms (compile: 1871µs, render: 12ms)
+ GET / 200 in 12ms (compile: 1730µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1886µs, render: 10ms)
+ GET / 200 in 13ms (compile: 1733µs, render: 11ms)
+✓ Compiled in 167ms
+✓ Compiled in 342ms
+✓ Compiled in 170ms
+ GET / 200 in 261ms (compile: 55ms, render: 206ms)
+ GET / 200 in 67ms (compile: 3ms, render: 64ms)
+prisma:query INSERT INTO `main`.`Booking` (`id`, `name`, `whatsapp`, `serviceType`, `shootingType`, `purposes`, `idea`, `referenceLinks`, `bookingDate`, `budget`, `needsHelp`, `status`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `name` AS `name`, `whatsapp` AS `whatsapp`, `serviceType` AS `serviceType`, `shootingType` AS `shootingType`, `purposes` AS `purposes`, `idea` AS `idea`, `referenceLinks` AS `referenceLinks`, `bookingDate` AS `bookingDate`, `budget` AS `budget`, `needsHelp` AS `needsHelp`, `status` AS `status`, `proposalText` AS `proposalText`, `proposalPrice` AS `proposalPrice`, `proposalDate` AS `proposalDate`, `notes` AS `notes`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+📋 Nouvelle demande de réservation: cmnek5j8g0000t4kpi9pofvcy
+ POST /api/booking 200 in 139ms (compile: 103ms, render: 36ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 121ms (compile: 104ms, render: 17ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 2ms, render: 7ms)
+✓ Compiled in 109ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 11ms (compile: 2ms, render: 9ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 12ms (compile: 4ms, render: 8ms)
+✓ Compiled in 132ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 8ms (compile: 1815µs, render: 6ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1322µs, render: 5ms)
+✓ Compiled in 205ms
+prisma:query SELECT 1
+ GET /api/bookings 200 in 6ms (compile: 1799µs, render: 5ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 11ms (compile: 4ms, render: 7ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 2ms, render: 7ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1816µs, render: 5ms)
+✓ Compiled in 116ms
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1940µs, render: 6ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1861µs, render: 5ms)
+✓ Compiled in 127ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 2ms, render: 5ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 5ms (compile: 1373µs, render: 4ms)
+ GET / 200 in 271ms (compile: 51ms, render: 220ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 3ms, render: 7ms)
+ GET / 200 in 58ms (compile: 3ms, render: 55ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 8ms (compile: 1797µs, render: 6ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`Booking` (`id`, `name`, `whatsapp`, `serviceType`, `shootingType`, `purposes`, `idea`, `referenceLinks`, `bookingDate`, `budget`, `needsHelp`, `status`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `name` AS `name`, `whatsapp` AS `whatsapp`, `serviceType` AS `serviceType`, `shootingType` AS `shootingType`, `purposes` AS `purposes`, `idea` AS `idea`, `referenceLinks` AS `referenceLinks`, `bookingDate` AS `bookingDate`, `budget` AS `budget`, `needsHelp` AS `needsHelp`, `status` AS `status`, `proposalText` AS `proposalText`, `proposalPrice` AS `proposalPrice`, `proposalDate` AS `proposalDate`, `notes` AS `notes`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+📋 Nouvelle demande de réservation: cmneko5q90001t4kp392rxwpk
+ POST /api/booking 200 in 10ms (compile: 2ms, render: 8ms)
+✓ Compiled in 203ms
+✓ Compiled in 136ms
+ GET / 200 in 95ms (compile: 50ms, render: 46ms)
+ GET / 200 in 12ms (compile: 1806µs, render: 11ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 2ms, render: 7ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 2ms, render: 5ms)
+ GET / 200 in 175ms (compile: 2ms, render: 173ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 10ms (compile: 3ms, render: 7ms)
+ GET / 200 in 59ms (compile: 3ms, render: 56ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 8ms (compile: 2ms, render: 6ms)
+✓ Compiled in 118ms
+ GET / 200 in 261ms (compile: 60ms, render: 201ms)
+ GET / 200 in 58ms (compile: 3ms, render: 55ms)
+ GET / 200 in 52ms (compile: 2ms, render: 50ms)
+✓ Compiled in 136ms
+ GET / 200 in 243ms (compile: 51ms, render: 192ms)
+ GET / 200 in 62ms (compile: 3ms, render: 58ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 10ms (compile: 2ms, render: 7ms)
+ GET / 200 in 50ms (compile: 3ms, render: 48ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 4ms, render: 5ms)
+ GET / 200 in 43ms (compile: 2ms, render: 41ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/bookings 200 in 9ms (compile: 1734µs, render: 7ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET / 200 in 104ms (compile: 61ms, render: 43ms)
+ GET / 200 in 14ms (compile: 1828µs, render: 13ms)
+ GET / 200 in 20ms (compile: 3ms, render: 18ms)
+ GET / 200 in 23ms (compile: 2ms, render: 20ms)
+ GET / 200 in 13ms (compile: 1963µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1736µs, render: 11ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 12ms (compile: 1598µs, render: 10ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 24ms (compile: 2ms, render: 21ms)
+ GET / 200 in 12ms (compile: 1957µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1739µs, render: 10ms)
+ GET / 200 in 17ms (compile: 1761µs, render: 16ms)
+ GET / 200 in 12ms (compile: 1860µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1656µs, render: 11ms)
+ GET / 200 in 41ms (compile: 2ms, render: 39ms)
+ GET / 200 in 13ms (compile: 1913µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1746µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1871µs, render: 10ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 18ms (compile: 2ms, render: 15ms)
+ GET / 200 in 21ms (compile: 3ms, render: 18ms)
+ GET / 200 in 14ms (compile: 3ms, render: 12ms)
+ GET / 200 in 11ms (compile: 1763µs, render: 9ms)
+ GET / 200 in 16ms (compile: 1695µs, render: 15ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 23ms (compile: 3ms, render: 20ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 13ms (compile: 1929µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1942µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1818µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1845µs, render: 10ms)
+ GET / 200 in 19ms (compile: 1904µs, render: 18ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 1859µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1940µs, render: 12ms)
+ GET / 200 in 30ms (compile: 1758µs, render: 28ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 11ms (compile: 1668µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1768µs, render: 10ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 1681µs, render: 11ms)
+ GET / 200 in 68ms (compile: 44ms, render: 24ms)
+ GET / 200 in 18ms (compile: 2ms, render: 16ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 22ms (compile: 2ms, render: 20ms)
+ GET / 200 in 12ms (compile: 1692µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1635µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1409µs, render: 10ms)
+ GET / 200 in 13ms (compile: 1904µs, render: 11ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 16ms (compile: 1921µs, render: 14ms)
+ GET / 200 in 17ms (compile: 2ms, render: 14ms)
+ GET / 200 in 30ms (compile: 2ms, render: 28ms)
+ GET / 200 in 13ms (compile: 1952µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1489µs, render: 11ms)
+ GET / 200 in 11ms (compile: 1474µs, render: 9ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 11ms (compile: 1699µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1489µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1868µs, render: 10ms)
+ GET / 200 in 14ms (compile: 1814µs, render: 13ms)
+ GET / 200 in 11ms (compile: 1848µs, render: 9ms)
+ GET / 200 in 12ms (compile: 1822µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1598µs, render: 11ms)
+ GET / 200 in 11ms (compile: 1469µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1632µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1775µs, render: 9ms)
+ GET / 200 in 12ms (compile: 1707µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1805µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1714µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1783µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1623µs, render: 10ms)
+ GET / 200 in 13ms (compile: 1996µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1751µs, render: 10ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 20ms (compile: 3ms, render: 18ms)
+ GET / 200 in 13ms (compile: 1761µs, render: 11ms)
+ GET / 200 in 16ms (compile: 3ms, render: 14ms)
+ GET / 200 in 16ms (compile: 1726µs, render: 14ms)
+ GET / 200 in 15ms (compile: 3ms, render: 12ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 13ms (compile: 1692µs, render: 11ms)
+ GET / 200 in 19ms (compile: 1869µs, render: 17ms)
+ GET / 200 in 17ms (compile: 1609µs, render: 15ms)
+ GET / 200 in 19ms (compile: 1622µs, render: 18ms)
+ GET / 200 in 16ms (compile: 1838µs, render: 14ms)
+ GET / 200 in 21ms (compile: 3ms, render: 18ms)
+ GET / 200 in 13ms (compile: 1655µs, render: 11ms)
+ GET / 200 in 16ms (compile: 1806µs, render: 14ms)
+ GET / 200 in 22ms (compile: 3ms, render: 20ms)
+ GET / 200 in 14ms (compile: 1688µs, render: 12ms)
+ GET / 200 in 17ms (compile: 1721µs, render: 15ms)
+ GET / 200 in 14ms (compile: 1694µs, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 12ms (compile: 1918µs, render: 10ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 12ms (compile: 1907µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1678µs, render: 10ms)
+ GET / 200 in 24ms (compile: 1766µs, render: 22ms)
+ GET / 200 in 13ms (compile: 1909µs, render: 11ms)
+ GET / 200 in 13ms (compile: 1763µs, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 21ms (compile: 2ms, render: 19ms)
+ GET / 200 in 12ms (compile: 1596µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1705µs, render: 10ms)
+ GET / 200 in 15ms (compile: 1807µs, render: 13ms)
+ GET / 200 in 31ms (compile: 2ms, render: 29ms)
+✓ Compiled in 140ms
+ GET / 200 in 68ms (compile: 46ms, render: 22ms)
+ GET / 200 in 11ms (compile: 1622µs, render: 9ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 36ms (compile: 25ms, render: 11ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 2ms, render: 7ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/bookings 200 in 15ms (compile: 2ms, render: 13ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+✓ Compiled in 176ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 2ms, render: 6ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 3ms, render: 6ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 8ms (compile: 2ms, render: 6ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 12ms (compile: 2ms, render: 10ms)
+✓ Compiled in 133ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 10ms (compile: 3ms, render: 7ms)
+✓ Compiled in 0ms
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 3ms, render: 6ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 5ms (compile: 1585µs, render: 4ms)
+ GET /api/bookings 200 in 7ms (compile: 1245µs, render: 5ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1284µs, render: 5ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1775µs, render: 5ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 10ms (compile: 1812µs, render: 8ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 6ms (compile: 1405µs, render: 5ms)
+✓ Compiled in 136ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1495µs, render: 5ms)
+⨯ ./src/app/api/photos/route.ts:5:1
+Module not found: Can't resolve '@paralleldrive/cuid2'
+[0m [90m 3 |[39m [36mimport[39m { writeFile[33m,[39m mkdir } [36mfrom[39m [32m'fs/promises'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { join } [36mfrom[39m [32m'path'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { createId } [36mfrom[39m [32m'@paralleldrive/cuid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m [33mADMIN_KEY[39m [33m=[39m [32m'pacobakh-admin-2024'[39m[33m;[39m
+ [90m 8 |[39m [36mconst[39m [33mUPLOAD_DIR[39m [33m=[39m join(process[33m.[39mcwd()[33m,[39m [32m'public'[39m[33m,[39m [32m'uploads'[39m[33m,[39m [32m'portfolio'[39m)[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /api/bookings 500 in 715ms (compile: 580ms, render: 135ms)
+ GET /api/photos 500 in 1106ms (compile: 1082ms, render: 24ms)
+ GET /api/bookings 500 in 13ms (compile: 5ms, render: 8ms)
+⨯ ./src/app/api/photos/route.ts:5:1
+Module not found: Can't resolve '@paralleldrive/cuid2'
+[0m [90m 3 |[39m [36mimport[39m { writeFile[33m,[39m mkdir } [36mfrom[39m [32m'fs/promises'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { join } [36mfrom[39m [32m'path'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { createId } [36mfrom[39m [32m'@paralleldrive/cuid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m [33mADMIN_KEY[39m [33m=[39m [32m'pacobakh-admin-2024'[39m[33m;[39m
+ [90m 8 |[39m [36mconst[39m [33mUPLOAD_DIR[39m [33m=[39m join(process[33m.[39mcwd()[33m,[39m [32m'public'[39m[33m,[39m [32m'uploads'[39m[33m,[39m [32m'portfolio'[39m)[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /api/photos 500 in 14ms (compile: 6ms, render: 8ms)
+⨯ ./src/app/api/photos/route.ts:5:1
+Module not found: Can't resolve '@paralleldrive/cuid2'
+[0m [90m 3 |[39m [36mimport[39m { writeFile[33m,[39m mkdir } [36mfrom[39m [32m'fs/promises'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { join } [36mfrom[39m [32m'path'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { createId } [36mfrom[39m [32m'@paralleldrive/cuid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m [33mADMIN_KEY[39m [33m=[39m [32m'pacobakh-admin-2024'[39m[33m;[39m
+ [90m 8 |[39m [36mconst[39m [33mUPLOAD_DIR[39m [33m=[39m join(process[33m.[39mcwd()[33m,[39m [32m'public'[39m[33m,[39m [32m'uploads'[39m[33m,[39m [32m'portfolio'[39m)[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /api/photos 500 in 19ms (compile: 9ms, render: 9ms)
+ GET /api/bookings 500 in 15ms (compile: 7ms, render: 9ms)
+⨯ ./src/app/api/photos/route.ts:5:1
+Module not found: Can't resolve '@paralleldrive/cuid2'
+[0m [90m 3 |[39m [36mimport[39m { writeFile[33m,[39m mkdir } [36mfrom[39m [32m'fs/promises'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { join } [36mfrom[39m [32m'path'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { createId } [36mfrom[39m [32m'@paralleldrive/cuid2'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m [33mADMIN_KEY[39m [33m=[39m [32m'pacobakh-admin-2024'[39m[33m;[39m
+ [90m 8 |[39m [36mconst[39m [33mUPLOAD_DIR[39m [33m=[39m join(process[33m.[39mcwd()[33m,[39m [32m'public'[39m[33m,[39m [32m'uploads'[39m[33m,[39m [32m'portfolio'[39m)[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /api/photos 500 in 16ms (compile: 10ms, render: 6ms)
+✓ Compiled in 152ms
+✓ Compiled in 117ms
+✓ Compiled in 204ms
+✓ Compiled in 180ms
+✓ Compiled in 209ms
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 136ms (compile: 41ms, render: 95ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 2ms, render: 6ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 62ms (compile: 1167µs, render: 61ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 9ms (compile: 2ms, render: 6ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 72ms (compile: 2ms, render: 70ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 60ms (compile: 1794µs, render: 59ms)
+prisma:query SELECT `main`.`Booking`.`id`, `main`.`Booking`.`name`, `main`.`Booking`.`whatsapp`, `main`.`Booking`.`serviceType`, `main`.`Booking`.`shootingType`, `main`.`Booking`.`purposes`, `main`.`Booking`.`idea`, `main`.`Booking`.`referenceLinks`, `main`.`Booking`.`bookingDate`, `main`.`Booking`.`budget`, `main`.`Booking`.`needsHelp`, `main`.`Booking`.`status`, `main`.`Booking`.`proposalText`, `main`.`Booking`.`proposalPrice`, `main`.`Booking`.`proposalDate`, `main`.`Booking`.`notes`, `main`.`Booking`.`createdAt`, `main`.`Booking`.`updatedAt` FROM `main`.`Booking` WHERE 1=1 ORDER BY `main`.`Booking`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/bookings 200 in 7ms (compile: 1837µs, render: 6ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 65ms (compile: 1744µs, render: 63ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 72ms (compile: 3ms, render: 69ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 46ms (compile: 1410µs, render: 44ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 102ms (compile: 3ms, render: 99ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 91ms (compile: 31ms, render: 60ms)
+Erreur lors de la récupération des photos: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at GET (src/app/api/photos/route.ts:27:44)
+  25 |     const isAdmin = checkAuth(request);
+  26 |
+> 27 |     const photos = await db.portfolioPhoto.findMany({
+     |                                            ^
+  28 |       orderBy: [{ order: 'asc' }, { createdAt: 'desc' }],
+  29 |     });
+  30 |
+ GET /api/photos 500 in 92ms (compile: 25ms, render: 67ms)
+Persisting failed: Unable to write SST file 00000600.sst
+
+Caused by:
+    No such file or directory (os error 2)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/api/photos/[__metadata_id__]/route/app-paths-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/api/photos/[__metadata_id__]/route/app-paths-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/api/photos/[__metadata_id__]/route/app-paths-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/api/photos/[__metadata_id__]/route/app-paths-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/app/page/build-manifest.json'
+}
+⨯ Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Error: ENOENT: no such file or directory, open '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/z/my-project/.next/dev/server/pages/_app/build-manifest.json'
+}
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+[?25h

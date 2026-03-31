@@ -1,0 +1,48 @@
+{
+  "name": "PACOYABAKH - Photo & Vidéo",
+  "short_name": "PacoYaBakh",
+  "description": "Studio photo et vidéo professionnel. Réservez votre shooting en quelques clics.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "categories": ["photography", "business"],
+  "icons": [
+    {
+      "src": "/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pwa-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Réserver un shooting",
+      "short_name": "Réserver",
+      "url": "/#booking",
+      "description": "Remplir le formulaire de réservation"
+    },
+    {
+      "name": "Nos réalisations",
+      "short_name": "Galerie",
+      "url": "/#portfolio",
+      "description": "Voir notre portfolio photo et vidéo"
+    }
+  ]
+}
