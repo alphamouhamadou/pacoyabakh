@@ -1,23 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
-import { writeFile, mkdir } from 'fs/promises';
-import { join } from 'path';
-import crypto from 'crypto';
+import { put } from '@vercel/blob';
 
 const ADMIN_KEY = 'pacobakh-admin-2024';
-const UPLOAD_DIR = join(process.cwd(), 'public', 'uploads', 'portfolio');
 const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 const MAX_SIZE = 10 * 1024 * 1024; // 10MB
 
 function checkAuth(request: NextRequest): boolean {
   const authHeader = request.headers.get('admin-key');
   return authHeader === ADMIN_KEY;
-}
-
-function getFileExtension(filename: string): string {
-  const ext = filename.split('.').pop()?.toLowerCase() || 'jpg';
-  if (ext === 'jpeg') return 'jpg';
-  return ext;
 }
 
 export async function GET(request: NextRequest) {
@@ -72,18 +63,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Ensure upload directory exists
-    await mkdir(UPLOAD_DIR, { recursive: true });
+    // Upload to Vercel Blob
+    const ext = file.name.split('.').pop()?.toLowerCase() || 'jpg';
+    const filename = `portfolio-${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`;
 
-    // Generate unique filename
-    const id = crypto.randomBytes(8).toString('hex');
-    const ext = getFileExtension(file.name);
-    const filename = `${id}.${ext}`;
-    const filePath = join(UPLOAD_DIR, filename);
-
-    // Write file
-    const bytes = await file.arrayBuffer();
-    await writeFile(filePath, Buffer.from(bytes));
+    const blob = await put(filename, file, {
+      access: 'public',
+      addRandomSuffix: true,
+    });
 
     // Save to database
     const photo = await db.portfolioPhoto.create({
@@ -91,16 +78,16 @@ export async function POST(request: NextRequest) {
         title: title || null,
         description: description || null,
         category,
-        imageUrl: `/uploads/portfolio/${filename}`,
+        imageUrl: blob.url,
         active: true,
       },
     });
 
     return NextResponse.json(photo, { status: 201 });
   } catch (error) {
-    console.error('Erreur lors de l\'upload:', error);
+    console.error("Erreur lors de l'upload:", error);
     return NextResponse.json(
-      { error: 'Erreur lors de l\'upload de la photo' },
+      { error: "Erreur lors de l'upload de la photo" },
       { status: 500 }
     );
   }
