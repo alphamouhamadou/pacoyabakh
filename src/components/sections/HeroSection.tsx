@@ -38,7 +38,7 @@ export function HeroSection() {
         <div className="transition-all duration-1000 animate-fade-in-up">
           {/* Logo */}
           <div className="mb-6">
-            <img src="/logo.png" alt="PacoYaBakh" className="h-20 sm:h-24 lg:h-32 mx-auto" />
+            <img src="/logo.png" alt="PacoYaBakh" className="h-28 sm:h-36 lg:h-48 mx-auto" />
           </div>
 
           {/* Tagline */}
