@@ -49,7 +49,7 @@ export function Navigation() {
   onClick={() => handleNavClick('#hero')}
   className="flex items-center"
 >
-  <img src="/logo.png" alt="PacoYaBakh" className="h-18" />
+  <img src="/logo.png" alt="PacoYaBakh" className="h-46" />
 </button>
 
           {/* Desktop Navigation */}
