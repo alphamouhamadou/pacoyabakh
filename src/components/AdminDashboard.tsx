@@ -805,8 +805,7 @@ export function AdminDashboard({
         <div className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-neutral-800 shrink-0">
           <div className="flex items-center gap-3">
             <h1 className="text-lg sm:text-xl font-bold text-white">
-              <span className="text-amber-500">PACO</span>
-              <span className="text-neutral-300">YABAKH</span>
+              <img src="/logo.png" alt="PacoYaBakh" className="h-7" />
               <span className="text-neutral-500 text-sm font-normal ml-2">
                 Admin
               </span>
