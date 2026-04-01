@@ -6,8 +6,8 @@ import { X, ExternalLink, Loader2 } from 'lucide-react';
 
 const categories = [
   { id: 'all', label: 'Tout' },
-  { id: 'studio', label: 'Studio' },
-  { id: 'exterieur', label: 'Extérieur' },
+  { id: 'studio', label: 'Shooting' },
+  { id: 'exterieur', label: 'Graduation' },
   { id: 'evenement', label: 'Événement' },
   { id: 'produit', label: 'Produit' },
 ];
