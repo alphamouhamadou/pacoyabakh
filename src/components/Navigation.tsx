@@ -46,15 +46,11 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <button
-            onClick={() => handleNavClick('#hero')}
-            className="flex items-center gap-2 group"
-          >
-            <Camera className="h-6 w-6 text-amber-500 group-hover:text-amber-400 transition-colors" />
-            <span className="text-xl font-bold tracking-tight">
-              <span className="text-gold-gradient">PACO</span>
-              <span className="text-white">YABAKH</span>
-            </span>
-          </button>
+  onClick={() => handleNavClick('#hero')}
+  className="flex items-center"
+>
+  <img src="/logo.png" alt="PacoYaBakh" className="h-9" />
+</button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
