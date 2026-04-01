@@ -35,12 +35,11 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div
-          className={`transition-all duration-1000 animate-fade-in-up`}
-        >
+        <div className="transition-all duration-1000 animate-fade-in-up">
           {/* Logo */}
           <div className="mb-6">
-  <img src="/logo.png" alt="PacoYaBakh" className="h-20 sm:h-24 lg:h-32 mx-auto" />
+            <img src="/logo.png" alt="PacoYaBakh" className="h-20 sm:h-24 lg:h-32 mx-auto" />
+          </div>
 
           {/* Tagline */}
           <p className="text-lg sm:text-xl lg:text-2xl text-neutral-300 mb-4 max-w-2xl mx-auto leading-relaxed">
@@ -74,9 +73,7 @@ export function HeroSection() {
         </div>
 
         {/* Scroll indicator */}
-        <div
-          className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 animate-fade-in`}
-        >
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 animate-fade-in">
           <button
             onClick={handleScroll}
             className="flex flex-col items-center gap-2 text-neutral-500 hover:text-amber-400 transition-colors"
