@@ -40,12 +40,7 @@ export function HeroSection() {
         >
           {/* Logo */}
           <div className="mb-6">
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight mb-2">
-              <span className="text-gold-gradient">PACO</span>
-              <span className="text-white">YABAKH</span>
-            </h1>
-            <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full" />
-          </div>
+  <img src="/logo.png" alt="PacoYaBakh" className="h-20 sm:h-24 lg:h-32 mx-auto" />
 
           {/* Tagline */}
           <p className="text-lg sm:text-xl lg:text-2xl text-neutral-300 mb-4 max-w-2xl mx-auto leading-relaxed">
